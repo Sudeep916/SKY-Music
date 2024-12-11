@@ -28,7 +28,7 @@ const MessageInput = () => {
 				/>
 
 				<Button size={"icon"} onClick={handleSend} disabled={!newMessage.trim()}>
-					<Send className='size-4 bg-sky-500 hover:bg-sky-600' />
+					<Send className='size-4 bg-orange-800 hover:bg-orange-700' />
 				</Button>
 			</div>
 		</div>

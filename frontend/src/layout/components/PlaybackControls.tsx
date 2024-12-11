@@ -50,7 +50,7 @@ export const PlaybackControls = () => {
 	};
 
 	return (
-		<footer className='h-20 sm:h-24 bg-zinc-900 border-t border-zinc-800 px-4'>
+		<footer className='h-20 sm:h-24 bg-black border-t border-zinc-800 px-4'>
 			<div className='flex justify-between items-center h-full max-w-[1800px] mx-auto'>
 				{/* currently playing song */}
 				<div className='hidden sm:flex items-center gap-4 min-w-[180px] w-[30%]'>
@@ -96,7 +96,7 @@ export const PlaybackControls = () => {
 
 						<Button
 							size='icon'
-							className='bg-sky-300 hover:bg-cyan/100 text-black rounded-full h-8 w-8'
+							className='bg-orange-800 hover:bg-cyan/100 text-black rounded-full h-8 w-8'
 							onClick={togglePlay}
 							disabled={!currentSong}
 						>
@@ -121,15 +121,15 @@ export const PlaybackControls = () => {
 					</div>
 
 					<div className='hidden sm:flex items-center gap-2 w-full'>
-						<div className='text-xs text-sky-400'>{formatTime(currentTime)}</div>
+						<div className='text-xs text-white'>{formatTime(currentTime)}</div>
 						<Slider
 							value={[currentTime]}
 							max={duration || 100}
 							step={1}
-							className='w-full hover:cursor-grab active:cursor-grabbing bg-sky-200'
+							className='w-full hover:cursor-grab active:cursor-grabbing bg-orange-200'
 							onValueChange={handleSeek}
 						/>
-						<div className='text-xs text-sky-400'>{formatTime(duration)}</div>
+						<div className='text-xs text-white'>{formatTime(duration)}</div>
 					</div>
 				</div>
 				{/* volume controls */}
@@ -150,7 +150,7 @@ export const PlaybackControls = () => {
 							value={[volume]}
 							max={100}
 							step={1}
-							className='w-24 hover:cursor-grab active:cursor-grabbing bg-sky-200'
+							className='w-24 hover:cursor-grab active:cursor-grabbing bg-orange-200'
 							onValueChange={(value) => {
 								setVolume(value[0]);
 								if (audioRef.current) {

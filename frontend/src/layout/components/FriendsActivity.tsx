@@ -14,7 +14,7 @@ const FriendsActivity = () => {
 	}, [fetchUsers, user]);
 
 	return (
-		<div className='h-full bg-zinc-900 rounded-lg flex flex-col'>
+		<div className='h-full bg-black rounded-lg flex flex-col'>
 			<div className='p-4 flex justify-between items-center border-b border-zinc-800'>
 				<div className='flex items-center gap-2'>
 					<Users className='size-5 shrink-0' />
@@ -33,7 +33,7 @@ const FriendsActivity = () => {
 						return (
 							<div
 								key={user._id}
-								className='cursor-pointer hover:bg-zinc-800/50 p-3 rounded-md transition-colors group'
+								className='cursor-pointer hover:bg-orange-800/50 p-3 rounded-md transition-colors group'
 							>
 								<div className='flex items-start gap-3'>
 									<div className='relative'>
@@ -43,7 +43,7 @@ const FriendsActivity = () => {
 										</Avatar>
 										<div
 											className={`absolute bottom-0 right-0 h-3 w-3 rounded-full border-2 border-zinc-900 
-												${onlineUsers.has(user.clerkId) ? "bg-sky-400" : "bg-zinc-500"}
+												${onlineUsers.has(user.clerkId) ? "bg-orange-800" : "bg-zinc-500"}
 												`}
 											aria-hidden='true'
 										/>
@@ -52,7 +52,7 @@ const FriendsActivity = () => {
 									<div className='flex-1 min-w-0'>
 										<div className='flex items-center gap-2'>
 											<span className='font-medium text-sm text-white'>{user.fullName}</span>
-											{isPlaying && <Music className='size-3.5 text-sky-300 shrink-0' />}
+											{isPlaying && <Music className='size-3.5 text-orange-800 shrink-0' />}
 										</div>
 
 										{isPlaying ? (
@@ -83,12 +83,12 @@ const LoginPrompt = () => (
 	<div className='h-full flex flex-col items-center justify-center p-6 text-center space-y-4'>
 		<div className='relative'>
 			<div
-				className='absolute -inset-1 bg-gradient-to-r from-sky-600 to-sky-500 rounded-full blur-lg
+				className='absolute -inset-1 bg-gradient-to-r from-orange-800 to-orange-600 rounded-full blur-lg
        opacity-75 animate-pulse'
 				aria-hidden='true'
 			/>
 			<div className='relative bg-zinc-900 rounded-full p-4'>
-				<HeadphonesIcon className='size-8 text-sky-400' />
+				<HeadphonesIcon className='size-8 text-orange-800' />
 			</div>
 		</div>
 

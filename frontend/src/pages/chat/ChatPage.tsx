@@ -31,7 +31,7 @@ const ChatPage = () => {
 	console.log({ messages });
 
 	return (
-		<main className='h-full rounded-lg bg-gradient-to-b from-zinc-800 to-zinc-900 overflow-hidden'>
+		<main className='h-full rounded-lg bg-black overflow-hidden'>
 			<Topbar />
 
 			<div className='grid lg:grid-cols-[300px_1fr] grid-cols-[80px_1fr] h-[calc(100vh-180px)]'>
@@ -65,7 +65,7 @@ const ChatPage = () => {
 
 											<div
 												className={`rounded-lg p-3 max-w-[70%]
-													${message.senderId === user?.id ? "bg-sky-600" : "bg-zinc-800"}
+													${message.senderId === user?.id ? "bg-orange-800" : "bg-zinc-800"}
 												`}
 											>
 												<p className='text-sm'>{message.content}</p>
