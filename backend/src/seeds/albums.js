@@ -282,14 +282,14 @@ const seedDatabase = async () => {
 				artist: "ALL",
 				imageUrl: "/albums/4.jpg",
 				releaseYear: 2024,
-				songs: createdSongs.slice(0, 27).map((song) => song._id),
+				songs: createdSongs.slice(0, 29).map((song) => song._id),
 			},
 			{
 				title: "Honey Singh Album",
 				artist: "Honey Singh",
 				imageUrl: "/albums/24.jpg",
 				releaseYear: 2024,
-				songs: createdSongs.slice(27, 31).map((song) => song._id),
+				songs: createdSongs.slice(28, 35).map((song) => song._id),
 			},
 		];
 
