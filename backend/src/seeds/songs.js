@@ -185,6 +185,13 @@ const songs = [
 		imageUrl: "/cover-images/26.jpg",
 		audioUrl: "/songs/26.mp3",
 		duration: 218, 
+	},
+	{
+		title: "Perfect",
+		artist: "Ed Sheeran",
+		imageUrl: "/cover-images/27.jpg",
+		audioUrl: "/songs/27.mp3",
+		duration: 263, 
 	}, 
 
 ];
