@@ -127,6 +127,41 @@ const seedDatabase = async () => {
 				plays: Math.floor(Math.random() * 5000),
 				duration: 17, // 0:17
 			},
+			{
+				title: "Millionaire",
+				artist: "Honey Singh",
+				imageUrl: "/cover-images/20.jpg",
+				audioUrl: "/songs/20.mp3",
+				duration: 210, 
+			},
+			{
+				title: "Payal",
+				artist: "Honey Singh",
+				imageUrl: "/cover-images/21.jpg",
+				audioUrl: "/songs/21.mp3",
+				duration: 231, 
+			}, 
+			{
+				title: "Bonita",
+				artist: "Honey Singh",
+				imageUrl: "/cover-images/22.jpg",
+				audioUrl: "/songs/22.mp3",
+				duration: 184, 
+			}, 
+			{
+				title: "Blue Eyes",
+				artist: "Honey Singh",
+				imageUrl: "/cover-images/23.jpg",
+				audioUrl: "/songs/23.mp3",
+				duration: 242, 
+			}, 
+			{
+				title: "Desi Kalakar",
+				artist: "Honey Singh",
+				imageUrl: "/cover-images/24.jpg",
+				audioUrl: "/songs/24.mp3",
+				duration: 597, 
+			}, 
 		]);
 
 		// Create albums with references to song IDs
@@ -164,7 +199,7 @@ const seedDatabase = async () => {
 				artist: "Honey Singh",
 				imageUrl: "/songs/24.jpg",
 				releaseYear: 2024,
-				songs: createdSongs.slice(11, 14).map((song) => song._id),
+				songs: createdSongs.slice(15, 20).map((song) => song._id),
 			},
 		];
 
