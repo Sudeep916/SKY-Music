@@ -204,6 +204,20 @@ const seedDatabase = async () => {
 				duration: 263, 
 			}, 
 			{
+				title: "Shape of You x Naina",
+				artist: "Ed Sheeran & Diljit Dosanjh",
+				imageUrl: "/cover-images/28.jpg",
+				audioUrl: "/songs/28.mp3",
+				duration: 301, 
+			}, 
+			{
+				title: "Shape of You ",
+				artist: "Ed Sheeran ",
+				imageUrl: "/cover-images/29.jpg",
+				audioUrl: "/songs/29.mp3",
+				duration: 263, 
+			}, 
+			{
 				title: "Millionaire",
 				artist: "Honey Singh",
 				imageUrl: "/cover-images/20.jpg",
@@ -268,7 +282,7 @@ const seedDatabase = async () => {
 				artist: "ALL",
 				imageUrl: "/albums/4.jpg",
 				releaseYear: 2024,
-				songs: createdSongs.slice(1, 27).map((song) => song._id),
+				songs: createdSongs.slice(0, 27).map((song) => song._id),
 			},
 			{
 				title: "Honey Singh Album",

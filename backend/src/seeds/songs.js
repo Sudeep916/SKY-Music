@@ -193,6 +193,20 @@ const songs = [
 		audioUrl: "/songs/27.mp3",
 		duration: 263, 
 	}, 
+	{
+		title: "Shape of You x Naina",
+		artist: "Ed Sheeran & Diljit Dosanjh",
+		imageUrl: "/cover-images/28.jpg",
+		audioUrl: "/songs/28.mp3",
+		duration: 301, 
+	},
+	 {
+		title: "Shape of You ",
+		artist: "Ed Sheeran ",
+		imageUrl: "/cover-images/29.jpg",
+		audioUrl: "/songs/29.mp3",
+		duration: 263, 
+	}, 
 
 ];
 
